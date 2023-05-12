@@ -1,0 +1,30 @@
+{
+    "name": "portfolio",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "env-cmd -f ./env/.env.development next dev -p 3000",
+        "debug": "env-cmd -f ./env/.env.development NODE_OPTIONS='--inspect' next dev -p 4200",
+        "build": "next build",
+        "start": "next start -p 14025",
+        "build:qa": "env-cmd -f ./env/.env.qa next build"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.10.6",
+        "@emotion/styled": "^11.10.6",
+        "@mui/material": "^5.12.0",
+        "autoprefixer": "^10.4.14",
+        "env-cmd": "^10.1.0",
+        "eslint": "8.35.0",
+        "eslint-config-next": "13.2.4",
+        "matter-js": "^0.19.0",
+        "next": "13.2.4",
+        "next-i18next": "^10.5.0",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "tailwindcss-rtl": "^0.9.0"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.3.1"
+    }
+}
